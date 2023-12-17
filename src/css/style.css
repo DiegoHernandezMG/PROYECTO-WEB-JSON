@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*Hack para box model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {    /*El asterisco selecicona todos los elementos del html, */
+    box-sizing: inherit;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+.search-box, .empty {
+    flex: 1;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+.search-box {
+    color: black;
+    padding: 10px;
+    text-align: center; 
+}
+
+.empty {
+    /* This empty div acts as a third column */
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #F0F0F0; /* Color de fondo de la barra */
+  }
+  .button-container .btn {
+    background-color: white; /* Color de los botones */
+    border-radius: 5px;
+  }
+
+  .button-container a{
+    color: black;
+    font-weight: lighter;
+  }
+
+.image:hover {
+    cursor: pointer;   /*Hace que aparezca la manita en los botones*/
+    opacity: 50%;
+}
